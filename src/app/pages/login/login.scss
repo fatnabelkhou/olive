@@ -1,0 +1,67 @@
+.header{
+  text-align: center;
+  font-size: 30px;
+}
+
+.row{
+  margin-top: 10px;
+}
+
+.error{
+  color: red;
+}
+
+
+.lbl{
+  font-size:16px;
+  color:#555;
+  text-align:center;
+  margin:10px 0 20px 0;
+}
+
+.socialLogin {
+  margin: 20px auto;
+  width: 90%;
+}
+.form1{
+  width:90%;
+  margin:auto;
+}
+.form-group{
+  margin: 10px auto ;
+}
+ 
+.npt{
+  width:100%;
+  font-size:14px;
+  margin:10px auto;
+}
+
+.facebook{
+  background-color: #3b5998;
+
+}
+.google{
+  background-color: #d13d35;
+}
+
+.container-logo {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin:50px auto;
+  img {
+    max-width: 250px;
+  }
+}
+.form-bottom-text {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-top:10px;
+}
+.form-bottom-text label,
+a {
+  color: #777;
+}
+

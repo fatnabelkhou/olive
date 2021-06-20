@@ -1,0 +1,40 @@
+<ons-page class="main_pages"  id="camera-page">
+  <ons-toolbar style="background-color:#4483A0;border-color:#4483A0; color:#fff;">
+    <div class="center" id="toolbar-title"  style="color:#fff; text-align: center;">Diffusion</div>
+  </ons-toolbar>
+  <div class="background"></div>
+  <div class="content" class="normal-page">
+    <div style="text-align: center; margin: 10px">
+        <div class="camera-view"><ons-icon class="camera-icon" icon="ion-android-camera"></ons-icon></div>
+     
+        <div style="text-align: left; ">
+         <h4 style="font-weight:normal;">Titre de l'évènement</h4>   
+        </div>       
+        <ons-input placeholder="Entrer le titre de cet évènement"  (change)="fillStreaming(eventName);" [(ngModel)]="eventName" class="npt" requierd="true" ></ons-input>
+
+        <div style="text-align: left; ">
+          <h4 style="font-weight:normal;">Catégorie de l'évènement</h4>          
+        </div>
+        <ons-select class="select"   modifier="material">
+          <select class="select-input" [(ngModel)]="selectedOption" (change)="fillStreaming(selectedOption);">
+            <option >Arts, Musique, Cinéma</option>
+            <option>Social</option>
+            <option>Education, Conférence</option>
+            <option>Actualités internationales</option>
+            <option>Actualités nationales</option>
+            <option>IT, Informatique</option>
+            <option>Litterature, Philosophie</option>
+            <option>Science, L'espace</option>
+            <option>Autres</option>
+
+
+          </select>
+        </ons-select>
+        <ons-button modifier="large" type="submit" class="startbutton"  (click)="startStreaming()">Commencez le live!</ons-button>
+
+    </div>
+    <div>
+
+    </div>
+  </div>
+</ons-page>

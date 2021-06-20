@@ -1,0 +1,46 @@
+<ons-page >
+  
+  <div class="content">
+    <div class="container-logo">
+      <img src="../../../assets/imgs/logoFull.png" height="80px" width="200px" />
+   </div>
+    <div class="card">
+      <div style="text-align:center;">
+        <h1>S'authentifier</h1>
+      </div>
+
+      <form [formGroup]="loginForm" class="form1">
+        <div class="form-group">
+            
+          <div>
+            <ons-input type="email" formControlName="email" class="form-control npt"  placeholder="Tapez votre e-mail ici" ></ons-input></div>
+        </div>
+        <div class="form-group">
+          <div><ons-input  type="password" class="form-control npt" formControlName="password" placeholder="Tapez votre mot de passe ici"></ons-input></div>
+          <label class="error">{{errorMessage}}</label>
+        </div>
+  
+        
+        <ons-button modifier="large" type="submit" class="login-button"  (click)="tryLogin(loginForm.value)">Se connecter</ons-button>
+        <ons-button modifier="quiet" class="forgot-password">Mot de passe oublié?</ons-button>
+  
+      </form>
+  
+      <div class="lbl">
+          - OU -
+        </div>
+  
+      <div class="socialLogin"style="text-align: center; ">
+        <ons-button   modifier="large" full class="google" (click)="tryGoogleLogin()" ><ons-icon  icon="md-google" style="margin-right: 12px;"></ons-icon> Se connecter via Google   </ons-button >
+      </div>
+      <div class="socialLogin"style="text-align: center; ">
+        <ons-button   modifier="large" full class="facebook" (click)="tryFacebookLogin()"><ons-icon icon="md-facebook" style="margin-right: 12px;"></ons-icon> Se connecter via Facebook</ons-button >
+      </div>
+      <div padding text-center class="form-bottom-text">
+          <label>Vous avez pas de compte? <a routerLink="/register">S'inscrire</a></label>
+      </div>
+    </div>     
+
+
+  </div>
+</ons-page>
